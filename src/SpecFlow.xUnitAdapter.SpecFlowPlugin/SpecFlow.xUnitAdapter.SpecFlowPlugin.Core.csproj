@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Gherkin" Version="4.0.1" />
     <PackageReference Include="System.Runtime.Loader" Version="4.3.0" />
     <PackageReference Include="System.Runtime.Serialization.Formatters" Version="4.3.0" />
     <PackageReference Include="xunit" Version="2.2.0" />
@@ -20,11 +19,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="Gherkin">
+      <HintPath>..\TemporaryDependencies\Gherkin\netstandard1.5\Gherkin.dll</HintPath>
+    </Reference>
     <Reference Include="TechTalk.SpecFlow.Core">
-      <HintPath>..\TemporaryDependencies\TechTalk.SpecFlow.Core\netstandard1.4\TechTalk.SpecFlow.Core.dll</HintPath>
+      <HintPath>..\TemporaryDependencies\TechTalk.SpecFlow.Core\netstandard1.5\TechTalk.SpecFlow.Core.dll</HintPath>
     </Reference>
     <Reference Include="TechTalk.SpecFlow.Parser.Core">
-      <HintPath>..\TemporaryDependencies\TechTalk.SpecFlow.Parser.Core\netstandard1.4\TechTalk.SpecFlow.Parser.Core.dll</HintPath>
+      <HintPath>..\TemporaryDependencies\TechTalk.SpecFlow.Parser.Core\netstandard1.5\TechTalk.SpecFlow.Parser.Core.dll</HintPath>
     </Reference>
   </ItemGroup>
 
